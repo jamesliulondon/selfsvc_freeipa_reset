@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Password Recovery</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+		<center>
+		<H2>Your password has been sucessfully changed to a temporary password</H2>
+		<H2><strong>{{ password|safe }}</strong></H2>
+		<H2>Please log in and change this.</H2>
+		</center>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+ 
