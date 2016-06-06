@@ -10,7 +10,7 @@ from sqlite3module import Sqlite3module
 
 s_username='CHANGEME'
 s_password='CHANGEME'
-IPAHOSTNAME='perfelldap01.feltham.performgroup.com'
+IPAHOSTNAME='ldapserver.site.performgroup.com'
 IPACERT="/etc/ipa/ca.crt"
 COOKIEJAR='my.cookie.jar'
 LOGINDATA="user="+s_username+"&password="+s_password
