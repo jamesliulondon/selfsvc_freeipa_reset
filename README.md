@@ -1,0 +1,1 @@
+# selfsvc_freeipa_reset
