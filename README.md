@@ -1,9 +1,26 @@
 # selfsvc_freeipa_reset
 
-Some modules have to be added for this to work.
+sudo yum install python python-pip supervisor
+pip install --upgrade pip
+pip install -r requirements.txt
 
-  pip install Flask-Mail
-  pip install flask-restful
-  pip install flask
-  pip install jinja2
 
+in /etc/supervisord.conf, add:
+
+[program:resetter]
+command=/usr/bin/python /vagrant/selfsvc_freeipa_reset/run.py
+directory=/vagrant/selfsvc_freeipa_reset
+redirect_stderr=true
+startsecs=5
+autorestart=true
+stdout_logfile=/tmp/log.log
+
+
+in run.py, change:
+[...]
+s_username='CHANGEME'
+s_password='CHANGEME'
+IPAHOSTNAME='ldapserver.site.performgroup.com'
+[...]
+
+service supervisor restart

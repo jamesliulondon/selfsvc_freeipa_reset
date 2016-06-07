@@ -1,12 +1,12 @@
 <html>
     <head>
-        <title>Handle POST requests with Flask</title>
-        <link rel=stylesheet type=text/css href="static/style.css">
+        <title>Password Recovery</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
         <div id="container">
             <div class="title">
-                <h1>Submit your token to reset password</h1>
+                <h1>Submit your token to reset password.</h1>
             </div>
             <div id="content">
                 <form method="post" action="/reset/v1.0/validate2">

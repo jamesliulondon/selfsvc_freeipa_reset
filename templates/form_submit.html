@@ -1,17 +1,19 @@
 <html>
     <head>
-        <title>Handle POST requests with Flask</title>
+        <title>Password Recovery</title>
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
         <div id="container">
             <div class="title">
-                <h1>POST request with Flask</h1>
+                <h1>What username do you want to recover.</h1>
             </div>
             <div id="content">
                 <form method="post" action="/reset/v1.0/generate">
                   <label for="yourname">Please enter your name:</label>
                   <input type="text" name="username" /><br />
+
+
                   <input type="submit" />
                 </form>
             </div>
