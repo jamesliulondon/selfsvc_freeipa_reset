@@ -1,0 +1,4 @@
+Flask-Mail
+flask-restful
+flask
+jinja2
